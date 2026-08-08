@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container-destination">
+        <nav>
+            <img src="shared/logo.svg" alt="Logo" class="logo">
+            <ul>
+                <li><a href="index.html"><strong>00</strong> Home</a></li>
+                <li><a href="destination.html"><strong>01</strong> Destination</a></li>
+                <li><a href="crew.html"><strong>02</strong> Crew</a></li>
+                <li><a href="technology.html"><strong>03</strong> Technology</a></li>
+            </ul>
+        </nav>
+
+        <div class="content-destination">
+
+            <div class="left">
+                <img id="planet-img" src="image-moon.webp" alt="">
+            </div>
+
+            <div class="right">
+                <h1><span>01</span> PICK YOUR DESTINATION</h1>
+
+                <div class="planet-buttons">
+                    <button onclick="showPlanet('moon')">Moon</button>
+                    <button onclick="showPlanet('mars')">Mars</button>
+                    <button onclick="showPlanet('europa')">Europa</button>
+                    <button onclick="showPlanet('titan')">Titan</button>
+                </div>
+
+                <div class="planet-card">
+                    <h2 id="planet-name">Moon</h2>
+                    <p id="planet-info">The Moon is the earths only sattellite.</p>
+                </div>
+
+                <hr>
+
+                <div class="planet-stats">
+                    <div class="avg-distance">
+                        <h3>AVG. DISTANCE</h3>
+                        <h4 id="planet-distance">384 TH. KM</h4>
+                    </div>
+
+                    <div class="avg-time">
+                        <h3>EST. TRAVEL TIME</h3>
+                        <h4 id="planet-time">3 DAYS</h4>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
